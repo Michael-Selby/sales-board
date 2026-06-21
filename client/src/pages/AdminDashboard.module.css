@@ -1,0 +1,240 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.title {
+  color: var(--text-dark);
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+
+.weekTotal {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.weekTotal strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.refreshBtn {
+  background: var(--white);
+  color: var(--primary);
+  border: 1.5px solid var(--border);
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.refreshBtn:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--primary-glow);
+}
+
+/* Day tabs */
+.dayTabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.dayTab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  cursor: pointer;
+  transition: all var(--transition);
+  min-width: 100px;
+  position: relative;
+}
+
+.dayTab:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.activeTab {
+  border-color: var(--primary);
+  background: var(--primary-subtle);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.closedTab {
+  opacity: 0.8;
+}
+
+.dayName {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.8px;
+}
+
+.activeTab .dayName {
+  color: var(--primary);
+}
+
+.dayAmount {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.activeTab .dayAmount {
+  color: var(--primary);
+}
+
+.closedBadge {
+  font-size: 0.6rem;
+  background: var(--danger);
+  color: var(--white);
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* Summary row */
+.summaryRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.summaryCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--border-light);
+  transition: box-shadow var(--transition);
+}
+
+.summaryCard:hover {
+  box-shadow: var(--shadow);
+}
+
+.summaryLabel {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+
+.summaryValue {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.statusOpen {
+  color: var(--success);
+  font-size: 1.3rem;
+}
+
+.statusClosed {
+  color: var(--danger);
+  font-size: 1.3rem;
+}
+
+/* Sales list */
+.listSection {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  border: 1px solid var(--border-light);
+}
+
+.listTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.salesList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.loading,
+.empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 48px 20px;
+  font-size: 0.93rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .summaryRow {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .summaryValue {
+    font-size: 1.4rem;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .dayTabs {
+    gap: 6px;
+  }
+
+  .dayTab {
+    min-width: 76px;
+    padding: 12px 8px;
+  }
+
+  .dayAmount {
+    font-size: 0.78rem;
+  }
+}
