@@ -1,7 +1,7 @@
 {
-  "name": "pharma-sales-server",
+  "name": "mart-sales-server",
   "version": "1.0.0",
-  "description": "PharmaSales backend API",
+  "description": "MartSales backend API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

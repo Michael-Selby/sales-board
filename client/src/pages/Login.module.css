@@ -58,8 +58,19 @@
 .brandTagline {
   font-size: 1.05rem;
   opacity: 0.75;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
   line-height: 1.5;
+}
+
+.illustration {
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.illustration svg {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 .features {

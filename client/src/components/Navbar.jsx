@@ -23,10 +23,13 @@ const Navbar = () => {
           <div className={styles.brand}>
             <div className={styles.logoIcon}>
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <path d="M11 3v16M3 11h16" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M3 9l3-5h10l3 5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                <rect x="3" y="9" width="16" height="3" rx="1" fill="rgba(255,255,255,0.3)" />
+                <path d="M4 12v8h14v-8" stroke="white" strokeWidth="1.5" />
+                <rect x="9" y="14" width="4" height="6" rx="0.5" fill="rgba(255,255,255,0.35)" />
               </svg>
             </div>
-            <span className={styles.brandText}>PharmaSales</span>
+            <span className={styles.brandText}>MartSales</span>
           </div>
 
           <div className={styles.nav}>

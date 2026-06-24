@@ -38,16 +38,39 @@ const Login = () => {
           <div className={styles.logoIcon}>
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
               <rect width="48" height="48" rx="12" fill="rgba(255,255,255,0.15)" />
-              <path d="M24 12v24M12 24h24" stroke="white" strokeWidth="4" strokeLinecap="round" />
-              <path d="M18 18h12v12H18z" fill="rgba(255,255,255,0.2)" rx="2" />
+              <path d="M10 20h28v18a2 2 0 01-2 2H12a2 2 0 01-2-2V20z" fill="rgba(255,255,255,0.2)" />
+              <path d="M8 14l4-6h24l4 6" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M8 14h32v6H8z" fill="rgba(255,255,255,0.3)" />
+              <rect x="18" y="28" width="12" height="12" rx="1" fill="rgba(255,255,255,0.35)" />
+              <path d="M24 28v12" stroke="white" strokeWidth="1.5" />
             </svg>
           </div>
-          <h1 className={styles.brandName}>PharmaSales</h1>
-          <p className={styles.brandTagline}>Pharmacy Sales Management System</p>
+          <h1 className={styles.brandName}>MartSales</h1>
+          <p className={styles.brandTagline}>Mini Mart Sales Management System</p>
+
+          <div className={styles.illustration}>
+            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="50" y="70" width="200" height="110" rx="6" fill="rgba(255,255,255,0.1)" />
+              <path d="M40 70l25-35h170l25 35" stroke="rgba(255,255,255,0.4)" strokeWidth="2" />
+              <rect x="40" y="70" width="220" height="16" rx="3" fill="rgba(255,255,255,0.15)" />
+              <rect x="70" y="100" width="50" height="60" rx="4" fill="rgba(255,255,255,0.12)" />
+              <rect x="75" y="105" width="40" height="30" rx="2" fill="rgba(255,255,255,0.08)" />
+              <rect x="130" y="100" width="50" height="60" rx="4" fill="rgba(255,255,255,0.12)" />
+              <rect x="135" y="105" width="40" height="30" rx="2" fill="rgba(255,255,255,0.08)" />
+              <rect x="190" y="100" width="50" height="80" rx="4" fill="rgba(255,255,255,0.12)" />
+              <rect x="195" y="105" width="40" height="40" rx="2" fill="rgba(255,255,255,0.08)" />
+              <path d="M205 155h20" stroke="rgba(255,255,255,0.3)" strokeWidth="2" strokeLinecap="round" />
+              <circle cx="150" cy="50" r="6" fill="rgba(255,255,255,0.2)" />
+              <path d="M150 44v-8M144 50h-8M156 50h8" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5" strokeLinecap="round" />
+              <rect x="70" y="168" width="50" height="6" rx="3" fill="rgba(255,255,255,0.08)" />
+              <rect x="130" y="168" width="50" height="6" rx="3" fill="rgba(255,255,255,0.08)" />
+            </svg>
+          </div>
+
           <div className={styles.features}>
             <div className={styles.feature}>
               <span className={styles.featureIcon}>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M4 3a1 1 0 00-1 1v1a1 1 0 001 1h1l1.3 7.2a2 2 0 002 1.8h5.4a2 2 0 002-1.8L17 6H6.1L5.8 4.4A1 1 0 004.8 3H4zm4 14a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm6 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
               </span>
               <span>Track daily sales in real time</span>
             </div>
