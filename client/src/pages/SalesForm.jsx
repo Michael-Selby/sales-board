@@ -268,7 +268,7 @@ const SalesForm = () => {
                 type="text"
                 value={itemName}
                 onChange={(e) => setItemName(e.target.value)}
-                placeholder="e.g. Paracetamol"
+                placeholder="e.g. Milo, Milk"
                 required
                 autoFocus
               />
